@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./commentArticle.scss";
 import { GoTriangleUp } from "react-icons/go";
 import axios from "axios";

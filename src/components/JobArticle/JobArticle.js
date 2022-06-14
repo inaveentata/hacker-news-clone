@@ -4,6 +4,7 @@ import axios from "axios";
 import { useQuery } from "react-query";
 import TimeFormatter from "../TimeFormatter";
 import { TailSpin } from "react-loader-spinner";
+import UrlText from '../UrlText'
 
 const JobArticle = ({ id }) => {
   const { data, isLoading, isError, error } = useQuery(
@@ -21,7 +22,9 @@ const JobArticle = ({ id }) => {
   const { title, url, time } = data;
   return (
     <article className="job-article">
-      <p className="title">{title}</p>
+      <p className="title">
+        <a href={url} target='_blank' rel='noopener'>{title}</a> (<UrlText url={url } />)
+      </p>
       <p className="time">
         <TimeFormatter value={time} /> ago
       </p>

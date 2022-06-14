@@ -1,6 +1,6 @@
 import React from "react";
 
-function Url_text({ url }) {
+function UrlText({ url }) {
     if (url) {
         
         let firstIndex;
@@ -17,13 +17,13 @@ function Url_text({ url }) {
           }
         }
         const domain = url.slice(firstIndex, lastIndex);
-        return <a href={`https://news.ycombinator.com/from?site=${domain}`} target='_blank'>{ domain}</a>
+        return <a href={`https://news.ycombinator.com/from?site=${domain}`} rel='noopener' target='_blank'>{ domain}</a>
         
     }
     return;
 }
 
-export default Url_text;
+export default UrlText;
 
 /* 
 https://news.ycombinator.com/from?site=${domain}

@@ -10,7 +10,7 @@ import {
   Ask,
   Show,
   Jobs,
-  Login_Submit,
+  Login,
 } from "./pages";
 
 function App() {
@@ -26,10 +26,10 @@ function App() {
           <Route path="ask" element={<Ask />} />
           <Route path="show" element={<Show />} />
           <Route path="jobs" element={<Jobs />} />
-          <Route path="submit" element={<Login_Submit />} />
-          <Route path="login" element={<Login_Submit />} />
+          <Route path="submit" element={<Login />} />
+          <Route path="login" element={<Login />} />
         </Routes>
-      </main>
+      </main> 
       <Footer />
     </BrowserRouter>
   );

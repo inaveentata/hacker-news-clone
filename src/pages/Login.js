@@ -1,7 +1,7 @@
 import React from "react";
 import "./login.scss";
 
-const Login_Submit = () => {
+const Login = () => {
   return (
     <section className="section">
       <div className="section__login">
@@ -14,7 +14,7 @@ const Login_Submit = () => {
         </div>
         <button>Login</button>
       </div>
-      <a href="#">Forgot your password?</a>
+      <p>Forgot your password?</p>
       <div className="section__createAccount">
         <h4>Create Account</h4>
         <div className="input-group">
@@ -29,4 +29,4 @@ const Login_Submit = () => {
   );
 };
 
-export default Login_Submit;
+export default Login;

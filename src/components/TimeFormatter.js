@@ -1,4 +1,3 @@
-import React from "react";
 function TimeFormatter({ value }) {
   const currentTime = new Date().getTime() //time is milliseconds format
   const publishedTime = value * 1000; // changing into milliseconds

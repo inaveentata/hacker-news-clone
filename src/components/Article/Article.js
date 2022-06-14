@@ -4,7 +4,7 @@ import { GoTriangleUp } from "react-icons/go";
 import axios from "axios";
 import { useQuery } from "react-query";
 import TimeFormatter from "../TimeFormatter";
-import Url_text from "../Url_text";
+import UrlText from "../UrlText";
 import { TailSpin } from "react-loader-spinner"; 
 
 const Article = ({ index, id }) => {
@@ -25,8 +25,8 @@ const Article = ({ index, id }) => {
         {index}.
         <span className="triangle">
           <GoTriangleUp size={10}  />
-        </span> <a href={url} target="_blank">{title}</a>
-         <span className="urlText">(<Url_text url={url} />)</span>
+        </span> <a href={url} rel='noopener' target="_blank">{title}</a>
+         <span className="urlText">(<UrlText url={url} />)</span>
       </p>
       <div className="info">
         <p>{points} points</p>

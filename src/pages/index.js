@@ -5,7 +5,7 @@ import Comments from './Comments'
 import Ask from './Ask'
 import Show from './Show'
 import Jobs from './Jobs'
-import Login_Submit from './Login_Submit'
+import Login from './Login'
 
 
-export {Home,NewNews,PastNews,Comments,Ask,Show,Jobs,Login_Submit}
+export {Home,NewNews,PastNews,Comments,Ask,Show,Jobs,Login}
