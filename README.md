@@ -2,6 +2,7 @@
 
 This application has been built using React@18
 
-![Screenshot](./HackerNews.png) of the finished application
+Screenshot of the finished application 👇.
+![Screenshot](./HackerNews.png) 
 
 Click [here]() to see the deployed application.
