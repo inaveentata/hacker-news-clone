@@ -25,7 +25,7 @@ const Article = ({ index, id }) => {
         {index}.
         <span className="triangle">
           <GoTriangleUp size={10}  />
-        </span> <a href={url} rel='noopener' target="_blank">{title}</a>
+        </span> <a href={url} rel="noreferrer" target="_blank">{title}</a>
          <span className="urlText">(<UrlText url={url} />)</span>
       </p>
       <div className="info">

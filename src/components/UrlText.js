@@ -17,7 +17,7 @@ function UrlText({ url }) {
           }
         }
         const domain = url.slice(firstIndex, lastIndex);
-        return <a href={`https://news.ycombinator.com/from?site=${domain}`} rel='noopener' target='_blank'>{ domain}</a>
+        return <a href={`https://news.ycombinator.com/from?site=${domain}`} rel="noreferrer" target='_blank'>{ domain}</a>
         
     }
     return;

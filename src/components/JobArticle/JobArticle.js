@@ -23,7 +23,7 @@ const JobArticle = ({ id }) => {
   return (
     <article className="job-article">
       <p className="title">
-        <a href={url} target='_blank' rel='noopener'>{title}</a> (<UrlText url={url } />)
+        <a href={url} target='_blank' rel="noreferrer">{title}</a> (<UrlText url={url } />)
       </p>
       <p className="time">
         <TimeFormatter value={time} /> ago
