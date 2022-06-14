@@ -1,0 +1,24 @@
+.section{
+
+    padding: 1rem;
+    &__login{
+        margin-bottom: 1rem;
+    }
+
+    a{
+        text-decoration: underline;
+        color: blue;
+    }
+
+    &__createAccount{
+        margin-top: 1rem;
+        
+    }
+    .input-group{
+        margin: 0.5rem 0;
+    }
+
+    button{
+        padding: 0.1rem 0.6rem;
+    }
+}

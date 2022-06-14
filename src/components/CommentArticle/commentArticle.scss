@@ -1,0 +1,23 @@
+.comment {
+  padding-top: 0.8rem;
+  .info {
+    display: flex;
+    align-items: center;
+    color: rgb(138, 138, 138);
+    padding: 0.4rem 0;
+    p{
+      font-size: 0.8rem;
+
+    }
+    p + p{
+      margin-left: 0.3rem;
+      
+    }
+  }
+  .text {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    padding-left: 1rem;
+    
+  } 
+}

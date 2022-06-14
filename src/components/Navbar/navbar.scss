@@ -1,0 +1,108 @@
+$primarybgColor: rgb(93, 174, 250);
+$primaryWhite: #fff;
+$primaryGray: #ddd;
+$primaryBlack: #000;
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $primaryBlack;
+}
+
+header {
+  background-color: $primarybgColor;
+  color: $primaryBlack;
+  padding: 0.3rem;
+
+  nav {
+    display: flex;
+    align-items: center;
+
+    .logo a {
+      color: $primaryWhite;
+      padding: 0.1rem 0.2rem;
+      font-size: 0.8rem;
+      border: 1px solid #fff;
+    }
+
+    .nav-elements {
+      margin-left: 0.5rem;
+    }
+    .nav-links {
+      display: flex;
+      a {
+        margin-right: 0.1rem;
+        font-size: 0.7rem;
+      }
+
+      li + li {
+        border-left: 1px solid #000;
+        padding-left: 0.3rem;
+        padding-right: 0.1rem;
+      }
+    }
+
+    .login {
+      margin-left: auto;
+      font-size: 0.7rem;
+    }
+  }
+}
+
+@media screen and (min-width: 425px) {
+  header {
+    nav {
+      .nav-links {
+        a {
+          margin-right: 0.25rem;
+          font-size: 0.8rem;
+        }
+      }
+      .login {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 810px) {
+  header {
+    nav {
+      .logo a {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.8rem;
+        border: 1.5px solid #fff;
+      }
+      .nav-elements {
+        display: flex;
+      }
+      .nav-links {
+        margin-left: 0.5rem;
+        a {
+          margin-right: 0.5rem;
+          font-size: 0.9rem;
+        }
+
+        li + li {
+          border-left: 2px solid #000;
+          padding-left: 0.6rem;
+          padding-right: 0.3rem;
+        }
+      }
+      .login {
+        margin-left: auto;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  header {
+    width: 88vw;
+    margin: 0.5rem auto 0 auto;
+  }
+}
